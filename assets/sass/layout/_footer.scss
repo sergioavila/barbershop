@@ -1,0 +1,11 @@
+.footer{
+    background-color: $eerie-black;
+    text-align: center;
+    padding: 5em 0;
+    &__logo{
+        max-width: 120px;
+        @media( max-width:480px ){
+            max-width:80px;
+        }
+    }
+}

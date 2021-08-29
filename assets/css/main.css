@@ -13,6 +13,11 @@ body {
 .barbershop .navbar__list .navbar__link--active {
   color: #ECBCBA;
 }
+@media (max-width: 480px) {
+  .barbershop .navbar-brand {
+    margin-left: 1.5em;
+  }
+}
 .barbershop .header {
   background-image: url(../../assets/images/post-image.jpg);
   background-size: cover;
@@ -26,8 +31,15 @@ body {
   font-family: "Playfair Display", serif;
   margin: 17% auto 25%;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-  font-size: 70px;
+  font-size: 4.5rem;
   max-width: 60%;
+}
+@media (max-width: 480px) {
+  .barbershop .header__title {
+    margin: 30% auto 60%;
+    max-width: 100%;
+    font-size: 3rem;
+  }
 }
 .barbershop .header__icon {
   display: block;
@@ -36,6 +48,11 @@ body {
 
 .article {
   padding: 3em 0 5em;
+}
+@media (max-width: 480px) {
+  .article article {
+    padding: 0 2em;
+  }
 }
 .article__date {
   font-family: "Playfair Display", serif;
@@ -60,23 +77,56 @@ body {
 .article__footer .medium-button {
   margin-right: 15px;
 }
+@media (max-width: 480px) {
+  .article__footer {
+    text-align: center;
+  }
+}
 
 .author {
   border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
   padding-top: 1.5em;
 }
 .author__bio {
   display: flex;
   align-items: center;
 }
+@media (max-width: 480px) {
+  .author__bio {
+    display: block;
+    text-align: center;
+  }
+}
 .author__photo {
   padding: 1em 3em 1em 0;
+}
+@media (max-width: 480px) {
+  .author__photo {
+    padding: 0 1em;
+  }
+}
+@media (max-width: 480px) {
+  .author__photo figure {
+    margin-bottom: 0;
+  }
 }
 .author__photo img {
   border: 1px solid #707070;
 }
+@media (max-width: 480px) {
+  .author__photo img {
+    max-width: 50%;
+    margin-bottom: 0;
+  }
+}
 .author__data {
   padding: 1em 3em 1em 0;
+}
+@media (max-width: 480px) {
+  .author__data {
+    padding: 1em;
+  }
 }
 .author__data h2 {
   font-family: "Playfair Display", serif;
@@ -91,6 +141,49 @@ body {
 .author__text {
   font-size: 0.9rem;
   color: #707070;
+}
+
+#paginator {
+  background-color: #E6E7E7;
+  padding: 2em 0;
+}
+#paginator .pagination {
+  margin-top: 2px;
+  padding-top: 20px;
+}
+#paginator .pagination__interface {
+  display: flex;
+  justify-content: center;
+}
+#paginator .pagination__interface a {
+  color: #000;
+}
+#paginator .pagination__previous {
+  border-top-left-radius: 15.25rem !important;
+  border-bottom-left-radius: 15.25rem !important;
+  color: #6E6C70 !important;
+}
+#paginator .pagination__next {
+  border-top-right-radius: 15.25rem !important;
+  border-bottom-right-radius: 15.25rem !important;
+}
+#paginator .pagination .page-link:hover {
+  background-color: #000;
+  color: #FFF;
+}
+
+.footer {
+  background-color: #121619;
+  text-align: center;
+  padding: 5em 0;
+}
+.footer__logo {
+  max-width: 120px;
+}
+@media (max-width: 480px) {
+  .footer__logo {
+    max-width: 80px;
+  }
 }
 
 .btn {

@@ -1,0 +1,31 @@
+#paginator{
+    background-color: $medium-gray;
+    padding: 2em 0;
+    .pagination{
+        margin-top: 2px;
+        padding-top: 20px;
+
+        &__interface {
+            display: flex;
+            justify-content: center;
+            a{
+                color: $black;
+            }
+        }
+        &__previous {
+            border-top-left-radius: 15.25rem !important;
+            border-bottom-left-radius: 15.25rem !important;
+            color: #6E6C70 !important;
+        }
+        &__next {
+            border-top-right-radius: 15.25rem !important;
+            border-bottom-right-radius: 15.25rem !important;
+        }
+        .page-link{
+            &:hover{
+                background-color: $black;
+                color: $white;
+            }
+        }
+    }
+}

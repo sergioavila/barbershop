@@ -1,5 +1,10 @@
 .article{
     padding: 3em 0 5em;
+    article{
+        @media( max-width:480px ){
+            padding: 0 2em;
+        }
+    }
     &__date{
         font-family: $playfair;
         font-size: 1.14rem;
@@ -25,6 +30,9 @@
     &__footer{
         .medium-button{
             margin-right: 15px;
+        }
+        @media( max-width:480px ){
+            text-align: center;
         }
     }
 }

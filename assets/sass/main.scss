@@ -9,8 +9,10 @@
 @import 'base/base';
 // Layout
 @import 'layout/header';
-@import 'layout/main-section';
+@import 'layout/article';
 @import 'layout/author';
+@import 'layout/pagination';
+@import 'layout/footer';
 // Components
 @import 'components/buttons';
 // Pages

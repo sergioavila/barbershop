@@ -1,18 +1,38 @@
 .author{
     border-top: 1px solid $dark-gray;
+    border-bottom: 1px solid $dark-gray;
     padding-top: 1.5em;
     &__bio{
         display: flex;
         align-items: center;
+        @media( max-width:480px ){
+            display: block;
+            text-align: center;
+        }
     }
     &__photo{
         padding: 1em 3em 1em 0;
+        @media( max-width:480px ){
+            padding: 0 1em;
+        }
+        figure{
+            @media( max-width:480px ){
+                margin-bottom: 0;
+            }
+        }
         img{
             border: 1px solid $dark-gray;
+            @media( max-width:480px ){
+                max-width: 50%;
+                margin-bottom: 0;
+            }
         }
     }
     &__data{
         padding: 1em 3em 1em 0;
+        @media( max-width:480px ){
+            padding: 1em;
+        }
         h2{
             font-family: $playfair;
             white-space: nowrap;
