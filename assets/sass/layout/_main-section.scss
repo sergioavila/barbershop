@@ -1,0 +1,30 @@
+.article{
+    padding: 3em 0 5em;
+    &__date{
+        font-family: $playfair;
+        font-size: 1.14rem;
+        margin: 3rem 0;
+    }
+    &__content{
+        p{
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 2em;
+            a{
+                color: $ruddy-pink;
+                text-decoration: none;
+                &:hover{
+                    color: $raisin-black;
+                }
+                &:active{
+                    color: $nickel;
+                }
+            }
+        }
+    }
+    &__footer{
+        .medium-button{
+            margin-right: 15px;
+        }
+    }
+}

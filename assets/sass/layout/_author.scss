@@ -1,0 +1,31 @@
+.author{
+    border-top: 1px solid $dark-gray;
+    padding-top: 1.5em;
+    &__bio{
+        display: flex;
+        align-items: center;
+    }
+    &__photo{
+        padding: 1em 3em 1em 0;
+        img{
+            border: 1px solid $dark-gray;
+        }
+    }
+    &__data{
+        padding: 1em 3em 1em 0;
+        h2{
+            font-family: $playfair;
+            white-space: nowrap;
+            color: $eerie-black;
+        }
+        p{
+            margin: 0;
+            color: $fuzzy-wuzzy;
+            font-weight: $light;
+        }
+    }
+    &__text{
+        font-size: .9rem;
+        color: $dark-gray;
+    }
+}
